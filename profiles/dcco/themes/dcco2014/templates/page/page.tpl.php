@@ -2,6 +2,14 @@
 
   <?php include('page-header.inc'); ?>
 
+  <?php if ($page['above_content']): ?>
+    <div id="above-content">
+      <div class="l--constrained">
+        <?php print render($page['above_content']); ?>
+      </div>
+    </div>
+  <?php endif; // end Above Content ?>
+
   <div id="main">
 
       <?php if ($messages): ?>
@@ -9,14 +17,6 @@
             <?php print $messages; ?>
         </div>
       <?php endif; // end messages ?>
-
-      <?php if ($page['above_content']): ?>
-        <div id="above-content">
-          <div class="l--constrained">
-            <?php print render($page['above_content']); ?>
-          </div>
-        </div>
-      <?php endif; // end Above Content ?>
 
       <div id="main-content" class="clearfix l--constrained">
 

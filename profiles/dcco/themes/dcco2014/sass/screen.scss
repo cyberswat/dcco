@@ -25,6 +25,7 @@
 @import "layout/*";
 
 // Libraries - Modified 3rd party CSS.
+   @import "libraries/slick";
 // @import "libraries/flexslider";
 
 // Components - Styles specific to components.
@@ -41,6 +42,7 @@
 @import "components/nav";
 @import "components/pager";
 @import "components/password";
+@import "components/promo";
 @import "components/search";
 @import "components/table";
 @import "components/view";

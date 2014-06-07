@@ -17,6 +17,12 @@
   @include button--secondary;
 }
 
+.button--tertiary {
+  @include button;
+  @include button--medium;
+  @include button--tertiary;
+}
+
 //
 // More links
 //

@@ -131,7 +131,7 @@ function dcco_landing_promo_field_default_field_instances() {
     'required' => 1,
     'settings' => array(
       'attributes' => array(
-        'class' => 'button--primary',
+        'class' => 'button--tertiary',
         'configurable_title' => 0,
         'rel' => '',
         'target' => 'default',

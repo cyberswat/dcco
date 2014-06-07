@@ -1,0 +1,70 @@
+//
+// @file
+// Promo styles.
+// ----------------------------------------------------------------------------
+
+.promos {
+  margin: 50px 0;
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    margin: 150px 0;
+  }
+}
+
+.promos__wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.promo {
+  .columns {
+    $gutters: 0;
+    @include nup-container($gutters);
+  }
+
+  .columns__column {
+    $gutters: 0;
+    $columns: 1;
+    @include nup-base($gutters, $columns);
+    @include nup-item($columns);
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      $columns: 2;
+      @include nup-base($gutters, $columns);
+      @include nup-item($columns);
+    }
+  }
+
+  .columns__column + .columns__column {
+    display: none;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      display: block;
+    }
+  }
+}
+
+.promo__body {
+  color: white;
+  font-family: $ff-sans;
+  font-size: $fs-l;
+}
+
+.promo__image {
+  height: 100%;
+  margin: 0 auto 30px;
+  width: 100%;
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    padding: 0 50px;
+  }
+
+  a {
+    border-radius: 50%;
+    display: block;
+
+    img {
+      opacity: 0;
+    }
+  }
+}

@@ -68,6 +68,18 @@
   }
 }
 
+@mixin button--tertiary {
+  background: $teal-light;
+
+  &:hover {
+    background: $teal-lighter;
+  }
+
+  &:active {
+    background: $teal;
+  }
+}
+
 // Button icons
 // ---------------------------------------------------------------------------
 @mixin button-icon($x-size: 18px, $y-size: 18px) {
