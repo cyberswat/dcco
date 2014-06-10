@@ -26,3 +26,20 @@ function prototype_preprocess_menu_link(&$vars) {
   $item_classes[] = 'nav-item';
   $link_classes[] = 'nav-link';
 }
+
+/**
+ * Add menu title as a class
+ */
+function dcco2014_menu_link(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+  $name_id = strtolower(strip_tags($element['#title']));
+  // remove colons and anything past colons
+  if (strpos($name_id, ':')) $name_id = substr ($name_id, 0, strpos($name_id, ':'));
+  //Preserve alphanumerics, everything else goes away
+  $pattern = '/[^a-z]+/ ';
+  $name_id = preg_replace($pattern, '', $name_id);
+  $element['#attributes']['class'][] = $name_id;
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
