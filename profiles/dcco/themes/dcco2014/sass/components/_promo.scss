@@ -11,27 +11,72 @@
   }
 }
 
-.promos__wrapper {
-  margin: 0;
+.slick-slider.promos__wrapper {
+  margin-bottom: 0;
   padding: 0;
 }
 
 .promo {
   .columns {
-    $gutters: 0;
-    @include nup-container($gutters);
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      display: table;
+    }
+  }
+
+  h2 {
+    color: $teal-light;
+    font-size: $fs-xxxl;
+    font-weight: normal;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      @include adjust-font-size-to($fs-xxxxxl * 1.75);
+    }
+  }
+
+  h3 {
+    @include adjust-font-size-to($fs-l, 4);
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin: 0 0 .667em 0;
+    text-transform: uppercase;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      @include adjust-font-size-to($fs-l * 1.75);
+    }
+  }
+
+  p {
+    @include adjust-font-size-to($fs-s, 4);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      @include adjust-font-size-to($fs-m, 4.5);
+    }
+  }
+
+  hr {
+    width: 40%;
+    margin: 16px 0 10px 0;
+    text-align: left;
+
+    @include breakpoint($tablet, $no-query: '.lt-ie9') {
+      margin-top: 24px;
+      width: 150px;
+    }
+
   }
 
   .columns__column {
-    $gutters: 0;
-    $columns: 1;
-    @include nup-base($gutters, $columns);
-    @include nup-item($columns);
+    width: 100%;
 
     @include breakpoint($tablet, $no-query: '.lt-ie9') {
-      $columns: 2;
-      @include nup-base($gutters, $columns);
-      @include nup-item($columns);
+      display: table-cell;
+      vertical-align: middle;
+      width: 60%;
     }
   }
 
@@ -39,8 +84,13 @@
     display: none;
 
     @include breakpoint($tablet, $no-query: '.lt-ie9') {
-      display: block;
+      display: table-cell;
+      width: 40%;
     }
+  }
+
+  .button--tertiary {
+    margin-top: 20px;
   }
 }
 
@@ -52,7 +102,7 @@
 
 .promo__image {
   height: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   width: 100%;
 
   @include breakpoint($tablet, $no-query: '.lt-ie9') {
@@ -60,6 +110,7 @@
   }
 
   a {
+    background-size: cover;
     border-radius: 50%;
     display: block;
 

@@ -96,6 +96,14 @@ blockquote {
   font-style: italic;
 }
 
+hr {
+  @include border-radius(3px);
+  background-color: transparentize($teal, 0.50);
+  border: none;
+  display: block;
+  height: 5px;
+}
+
 
 // Images
 //-----------------------------------------------------------------------------

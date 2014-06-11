@@ -82,6 +82,8 @@ function dcco_landing_promo_views_default_views() {
   $handler->display->display_options['fields']['field_promo_subtitle']['table'] = 'field_data_field_promo_subtitle';
   $handler->display->display_options['fields']['field_promo_subtitle']['field'] = 'field_promo_subtitle';
   $handler->display->display_options['fields']['field_promo_subtitle']['label'] = '';
+  $handler->display->display_options['fields']['field_promo_subtitle']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_promo_subtitle']['alter']['text'] = '[field_promo_subtitle]<hr>';
   $handler->display->display_options['fields']['field_promo_subtitle']['element_type'] = 'h3';
   $handler->display->display_options['fields']['field_promo_subtitle']['element_label_type'] = '0';
   $handler->display->display_options['fields']['field_promo_subtitle']['element_label_colon'] = FALSE;

@@ -457,6 +457,18 @@ blockquote {
   font-style: italic;
 }
 
+hr {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(1, 152, 108, 0.5);
+  border: none;
+  display: block;
+  height: 5px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -1394,33 +1406,75 @@ div.password-confirm {
   }
 }
 
-.promos__wrapper {
-  margin: 0;
+.slick-slider.promos__wrapper {
+  margin-bottom: 0;
   padding: 0;
 }
 
-.promo .columns {
-  *zoom: 1;
-  margin-left: 0;
-  margin-right: 0;
+@media (min-width: 768px) {
+  .promo .columns {
+    display: table;
+  }
 }
-.promo .columns:before, .promo .columns:after {
-  content: " ";
-  display: table;
+.promo h2 {
+  color: #00c584;
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  margin-bottom: 0;
+  text-transform: uppercase;
 }
-.promo .columns:after {
-  clear: both;
+@media (min-width: 768px) {
+  .promo h2 {
+    font-size: 5.83333em;
+    line-height: 1.08571em;
+  }
+}
+.promo h3 {
+  font-size: 1.16667em;
+  line-height: 1.14286em;
+  font-weight: normal;
+  letter-spacing: 3px;
+  margin: 0 0 .667em 0;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .promo h3 {
+    font-size: 2.04167em;
+    line-height: 1.14286em;
+  }
+}
+.promo p {
+  font-size: 0.77778em;
+  line-height: 1.71429em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (min-width: 768px) {
+  .promo p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+.promo hr {
+  width: 40%;
+  margin: 16px 0 10px 0;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .promo hr {
+    margin-top: 24px;
+    width: 150px;
+  }
 }
 .promo .columns__column {
-  float: left;
-  padding: 0 0;
   width: 100%;
 }
 @media (min-width: 768px) {
   .promo .columns__column {
-    float: left;
-    padding: 0 0;
-    width: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
   }
 }
 .promo .columns__column + .columns__column {
@@ -1428,8 +1482,12 @@ div.password-confirm {
 }
 @media (min-width: 768px) {
   .promo .columns__column + .columns__column {
-    display: block;
+    display: table-cell;
+    width: 40%;
   }
+}
+.promo .button--tertiary {
+  margin-top: 20px;
 }
 
 .promo__body {
@@ -1440,7 +1498,7 @@ div.password-confirm {
 
 .promo__image {
   height: 100%;
-  margin: 0 auto 30px;
+  margin: 0 auto;
   width: 100%;
 }
 @media (min-width: 768px) {
@@ -1449,6 +1507,7 @@ div.password-confirm {
   }
 }
 .promo__image a {
+  background-size: cover;
   border-radius: 50%;
   display: block;
 }

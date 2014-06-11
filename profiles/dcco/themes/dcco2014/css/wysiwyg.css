@@ -371,6 +371,18 @@ blockquote {
   font-style: italic;
 }
 
+hr {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-color: rgba(1, 152, 108, 0.5);
+  border: none;
+  display: block;
+  height: 5px;
+}
+
 img {
   max-width: 100%;
   height: auto;
