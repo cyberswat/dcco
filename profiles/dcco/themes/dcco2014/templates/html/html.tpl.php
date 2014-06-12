@@ -17,9 +17,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="<?php print $favicon; ?>" />
   <?php print $styles; ?>
   <?php print $scripts; ?>
-<!--  <script type="text/javascript" src="//use.typekit.net/mfg3jbg.js"></script>-->
-<!--  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
-  <script type="text/javascript" src="//use.typekit.net/olj7bzn.js"></script>
+  <script type="text/javascript" src="//use.typekit.net/mfg3jbg.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
