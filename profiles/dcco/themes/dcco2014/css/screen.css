@@ -664,7 +664,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402535849') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402520917') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1567,11 +1567,11 @@ div.password-confirm {
 }
 
 .promos {
-  margin: 50px 0;
+  padding: 50px 0;
 }
 @media (min-width: 768px) {
   .promos {
-    margin: 150px 0;
+    padding: 150px 0;
   }
 }
 
