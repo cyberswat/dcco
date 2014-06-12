@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402544962') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402611289') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -961,6 +961,7 @@ body {
 
 #main {
   background-color: white;
+  overflow: hidden;
 }
 
 #above-content {
