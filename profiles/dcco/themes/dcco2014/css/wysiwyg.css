@@ -330,9 +330,9 @@ h4 {
 }
 
 h5 {
-  font-size: 0.77778em;
-  line-height: 1.28571em;
-  margin-top: 1.71429em;
+  font-size: 0.88889em;
+  line-height: 1.5em;
+  margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
@@ -340,9 +340,9 @@ h5 {
 }
 
 h6 {
-  font-size: 0.66667em;
-  line-height: 1.5em;
-  margin-top: 2em;
+  font-size: 0.72222em;
+  line-height: 1.38462em;
+  margin-top: 1.84615em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 0em;
@@ -401,10 +401,10 @@ dd {
 }
 
 label {
-  font-size: 0.77778em;
-  line-height: 1.28571em;
+  font-size: 0.88889em;
+  line-height: 1.5em;
   display: block;
-  margin-bottom: 0.42857em;
+  margin-bottom: 0.375em;
   font-family: "anago", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
 }
@@ -507,7 +507,7 @@ button:active {
 select {
   font-size: 1em;
   line-height: 1.33333em;
-  margin-bottom: 0.42857em;
+  margin-bottom: 0.375em;
 }
 
 table {
@@ -568,6 +568,15 @@ tr.even {
 .intro {
   font-size: 1.55556em;
   line-height: 1.28571em;
+}
+
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
 }
 
 .image-frame > img,

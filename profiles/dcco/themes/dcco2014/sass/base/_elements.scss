@@ -251,3 +251,7 @@ tr.even { background-color: $clr-table-even; }
 .intro {
   @include adjust-font-size-to($fs-xxl);
 }
+
+.inline-block {
+  @include inline-block;
+}

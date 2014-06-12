@@ -6,15 +6,91 @@
 // Header region
 
 #header {
+  @extend .clearfix;
   background-color: $teal-black;
-  padding: rhythm(1) 0;
   position: relative;
+  
+  .l--constrained {
+    // padding-bottom: rhythm(1);
+    // padding-top: rhythm(1);
+    position: relative;
+  }
 
-  //user menu
+  #utility {
+    position: relative;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    // margin-top: rhythm(1, $fs-s);
+    width: 50%;
+  }
+
   ul.nav {
-      padding:0 .5em;
-      text-align: center;
+    text-align: center;
+    > li {
+      border-top: 1px solid $teal-dark;
+      padding: rhythm(3);
     }
+    a {
+      @include adjust-font-size-to($fs-xs, 4);
+      @extend .inline-block;
+      color: $teal-lighter;
+      font-weight: bold;
+      letter-spacing: .1em;
+      padding: 0 rhythm(1.5, $fs-xs);
+      text-decoration: none;
+      text-transform: uppercase;
+      @include transition;
+      &:hover {
+        color: $teal-white;
+      }
+      &.link-register {
+        @include border-radius(3px);
+        background: $white;
+        color: $teal;
+        &:hover {
+          background: $teal-lighter;
+          color: $teal-darkest;
+        }
+      }
+    }
+  }
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    .l--constrained {
+      @include clearfix;
+    }
+    #utility {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -(rhythm(2));
+    }
+    ul.nav {
+      text-align: left;
+      > li {
+        border: none;
+        padding: 0 rhythm(1);
+        width: auto;
+        float: left;
+      }
+
+      a {
+        float: left;
+      }
+    }
+  }
+  
+  /* //user menu
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
 
     ul.nav > li {
       width:100%;
@@ -33,12 +109,11 @@
     position: absolute;
     bottom: -41px;
     right: 50px;
-  }
+  } */
 
   // user menu large screens
-  @media only screen and (min-width: 640px) {
+  /* @include breakpoint($mobile-wide, $no-query: '.lt-ie9') {
     ul.nav {
-      width:100%;
       list-style:none;
       text-align:right;
 
@@ -67,31 +142,50 @@
     #block-system-user-menu {
       width: auto;
     }
-  }
+  } */
 }
 
 // Branding component
 
 #branding {
-  float: left;
+  text-align: center;
+  padding: rhythm(2);
   > h1 {
-    @include adjust-font-size-to($fs-l, 5);
-    float: left;
-    margin: 0 rhythm(5, $fs-l);
+    @include adjust-font-size-to($fs-xxl, 5);
+    margin: 0;
     text-transform: uppercase;
     > a {
       color: $white;
+      text-decoration: none;
+      @include transition;
+      &:hover {
+        color: $teal-lighter;
+      }
     }
   }
 
   > h2 {
     @include adjust-font-size-to($fs-m, 5);
     color: $white;
-    float: left;
     font-family: $ff-body;
     font-weight: normal;
     margin: 0;
     text-transform: uppercase;
+  }
+
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    padding: rhythm(1) 0;
+    float: left;
+    text-align: left;
+
+    > h1 {
+      float: left;
+      margin-right: rhythm(5, $fs-l);
+    }
+
+    > h2 {
+      float: left;
+    }
   }
 }
 
@@ -100,6 +194,9 @@
 #masthead {
   padding: 10%;
   text-align: center;
+  @include breakpoint($tablet, $no-query: '.lt-ie9') {
+    padding: 5%;
+  }
 
   img {
     display: block;
