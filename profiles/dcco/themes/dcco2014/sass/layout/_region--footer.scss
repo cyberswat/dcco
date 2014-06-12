@@ -28,9 +28,9 @@
       letter-spacing: 4px;
       text-decoration: none;
       @extend .icon-twitter;
+      @extend .icon;
 
       &:before {
-        @extend .icon;
         font-size: 60px;
         margin-right: 10px;
         vertical-align: -5px;
