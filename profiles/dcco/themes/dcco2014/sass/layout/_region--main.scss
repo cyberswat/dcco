@@ -6,7 +6,54 @@
 // Main
 #main {
   background-color: $white;
+  #content{
+  	#block-views-updates-block{
+  		.block-title{
+  			font-family: $ff-heading;
+  			font-weight: normal;
+  			text-transform: none;
+  			font-size: $fs-xxxxxl;
+  			margin-bottom: 7px;
+  			color: $teal;
+  		}
+  		.view-updates{
+  			border-top: solid 1px $clr-border;
+			padding-top: 32px;
+  			table{
+  				td{
+  					border: none;
+  				}
+  			}
+  			.view-content{
+  				.views-field-created{
+  					font-family: $ff-sans;
+  					font-weight: bold;
+  					text-transform: uppercase;
+  					font-size: $fs-xs;
+  					color: $teal-darker;
+  				}
+  				.views-field-title{
+  					margin: 10px 0;
+  					font-family: $ff-heading;
+  					font-weight: bold;
+  					font-size: $fs-xxl;
+  					line-height: 35px;
+  				}
+  				.col-1 {
+  					padding: 0 30px 0 0;
+  				}
+  				.col-2 {
+  					padding: 0 30px;
+  				}
+  				.col-3 {
+  					padding: 0 0 0 30px;
+  				}
+  			}
+  		}
+  	}
+  }
 }
+
 
 // Above content
 #above-content {
@@ -17,4 +64,13 @@
 // Main content
 #main-content {
   padding: rhythm(2) 0;
+  
+  &:after{
+  	background: transparentize($clr-neutral, 0.8);
+  	position: absolute;
+  	content: "";
+  	left: 0;
+  	right:0;
+
+  }
 }
