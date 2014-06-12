@@ -5,8 +5,8 @@
 <!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
   <title>DrupalCamp Colorado 2014 - StyleGuide</title>
-  <script type="text/javascript" src="//use.typekit.net/mfg3jbg.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+<!--  <script type="text/javascript" src="//use.typekit.net/mfg3jbg.js"></script>-->
+<!--  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>-->
   <link rel="stylesheet" href="../css/screen.css">
   <link rel="stylesheet" href="../css/styleguide.css">
 </head>

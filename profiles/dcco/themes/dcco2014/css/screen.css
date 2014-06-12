@@ -1933,23 +1933,45 @@ div.password-confirm {
   }
 }
 
+.view-sponsors {
+  padding-bottom: 15px;
+}
 .view-sponsors .view-header {
   border-bottom: #dae8e2 solid 3px;
 }
+.view-sponsors .view-header h2 {
+  margin-bottom: 15px;
+}
 .view-sponsors .item-list ul {
-  margin: 0;
-  padding: 0 0 15px 0;
+  padding: 0;
+  *zoom: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+.view-sponsors .item-list ul:before, .view-sponsors .item-list ul:after {
+  content: " ";
+  display: table;
+}
+.view-sponsors .item-list ul:after {
+  clear: both;
 }
 .view-sponsors .item-list ul li {
-  display: inline-block;
+  display: table;
   list-style: none;
-  height: 85px;
-  width: 49%;
+  text-align: center;
+  float: left;
+  padding: 0 0;
+  width: 50%;
+}
+.view-sponsors .item-list ul li .views-field {
+  display: table-cell;
+  vertical-align: middle;
 }
 @media (min-width: 768px) {
   .view-sponsors .item-list ul li {
-    width: 24%;
-    height: 40px;
+    float: left;
+    padding: 0 0;
+    width: 25%;
   }
 }
 
