@@ -132,3 +132,15 @@ function dcco_register_views_api() {
   );
 
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function dcco_register_form_alter(&$form, &$form_state, $form_id) {
+
+  drupal_set_message($form_id);
+
+  if ($form_id == "user_register_form") {
+    $form_state['redirect'] = 'register';
+  }
+}
