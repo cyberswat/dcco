@@ -49,6 +49,7 @@
         display: table;
         list-style: none;
         text-align: center;
+        /*@todo: add some real gutter space, currently it pushes the grid apart */
         $gutters: 0;
         $columns: 2;
 

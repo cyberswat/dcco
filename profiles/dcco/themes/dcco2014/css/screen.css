@@ -1959,6 +1959,7 @@ div.password-confirm {
   display: table;
   list-style: none;
   text-align: center;
+  /*@todo: add some real gutter space, currently it pushes the grid appart */
   float: left;
   padding: 0 0;
   width: 50%;
