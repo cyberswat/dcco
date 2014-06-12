@@ -1010,13 +1010,6 @@ body {
 #main-content {
   padding: 0.66667em 0;
 }
-#main-content:after {
-  background: rgba(153, 153, 153, 0.2);
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-}
 
 #messages {
   padding: 1.33333em 15px 0.33333em;

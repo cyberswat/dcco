@@ -64,13 +64,4 @@
 // Main content
 #main-content {
   padding: rhythm(2) 0;
-  
-  &:after{
-  	background: transparentize($clr-neutral, 0.8);
-  	position: absolute;
-  	content: "";
-  	left: 0;
-  	right:0;
-
-  }
 }
