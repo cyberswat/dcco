@@ -58,23 +58,23 @@ div.styleguide-color {
   position: relative;
 }
 div.styleguide-color > strong {
-  font-size: 0.77778em;
-  line-height: 1.28571em;
+  font-size: 0.88889em;
+  line-height: 1.125em;
   color: #666666;
   font-weight: bold;
   position: absolute;
   left: 0;
   top: 100%;
-  margin-top: 0.42857em;
+  margin-top: 0.375em;
 }
 div.styleguide-color > span {
-  font-size: 0.77778em;
-  line-height: 1.28571em;
+  font-size: 0.88889em;
+  line-height: 1.125em;
   color: #999999;
   position: absolute;
   left: 0;
   top: 100%;
-  margin-top: 1.71429em;
+  margin-top: 1.5em;
 }
 
 div.styleguide-color-main {
