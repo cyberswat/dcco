@@ -26,3 +26,48 @@
     }
   }
 }
+
+.view-sponsors {
+  padding-bottom: 15px;
+
+  .view-header {
+    border-bottom: $teal-lightest solid 3px;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+  }
+
+  .item-list {
+    ul {
+      padding: 0;
+      $gutters: 0;
+
+      @include nup-container($gutters);
+
+      li {
+        display: table;
+        list-style: none;
+        text-align: center;
+        /*@todo: add some real gutter space, currently it pushes the grid apart */
+        $gutters: 0;
+        $columns: 2;
+
+        @include nup-base($gutters, $columns);
+        @include nup-item($columns);
+
+        .views-field {
+          display: table-cell;
+          vertical-align: middle;
+        }
+
+        @include breakpoint($tablet) {
+          $gutters: 0;
+          $columns: 4;
+          @include nup-base($gutters, $columns);
+          @include nup-item($columns);
+        }
+      }
+    }
+  }
+}

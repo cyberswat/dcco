@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402544962') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402427713') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1930,6 +1930,49 @@ div.password-confirm {
   }
   .view-header .dcco-sponsors-header a {
     padding: 0.5em 0em 0.5em 1em;
+  }
+}
+
+.view-sponsors {
+  padding-bottom: 15px;
+}
+.view-sponsors .view-header {
+  border-bottom: #dae8e2 solid 3px;
+}
+.view-sponsors .view-header h2 {
+  margin-bottom: 15px;
+}
+.view-sponsors .item-list ul {
+  padding: 0;
+  *zoom: 1;
+  margin-left: 0;
+  margin-right: 0;
+}
+.view-sponsors .item-list ul:before, .view-sponsors .item-list ul:after {
+  content: " ";
+  display: table;
+}
+.view-sponsors .item-list ul:after {
+  clear: both;
+}
+.view-sponsors .item-list ul li {
+  display: table;
+  list-style: none;
+  text-align: center;
+  /*@todo: add some real gutter space, currently it pushes the grid appart */
+  float: left;
+  padding: 0 0;
+  width: 50%;
+}
+.view-sponsors .item-list ul li .views-field {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media (min-width: 768px) {
+  .view-sponsors .item-list ul li {
+    float: left;
+    padding: 0 0;
+    width: 25%;
   }
 }
 

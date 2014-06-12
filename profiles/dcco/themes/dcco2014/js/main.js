@@ -16,4 +16,13 @@
           autoplaySpeed: 5000
       });
   });
+
+  // Fire events after images load.
+  $(window).load(function() {
+    // Set equal heights to sponsor image containers so that we can vertically center them in the stylesheet.
+    var maxHeight = 0;
+    $('.views-field-field-sponsor-logo').each(function() {
+      maxHeight = Math.max(maxHeight, $(this).height());
+    }).height(maxHeight);
+  });
 })(jQuery);
