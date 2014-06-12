@@ -26,3 +26,30 @@
     }
   }
 }
+
+.view-sponsors {
+  .view-header {
+    border-bottom: $teal-lightest solid 3px;
+  }
+
+  .item-list {
+    ul {
+      margin: 0;
+      padding: 0 0 15px 0;
+
+      li {
+        display: inline-block;
+        list-style: none;
+        height: 85px;
+        width: 49%;
+      }
+
+      @include breakpoint($tablet) {
+        li {
+          width: 24%;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

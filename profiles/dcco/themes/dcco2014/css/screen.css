@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402544962') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402427713') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1930,6 +1930,26 @@ div.password-confirm {
   }
   .view-header .dcco-sponsors-header a {
     padding: 0.5em 0em 0.5em 1em;
+  }
+}
+
+.view-sponsors .view-header {
+  border-bottom: #dae8e2 solid 3px;
+}
+.view-sponsors .item-list ul {
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+.view-sponsors .item-list ul li {
+  display: inline-block;
+  list-style: none;
+  height: 85px;
+  width: 49%;
+}
+@media (min-width: 768px) {
+  .view-sponsors .item-list ul li {
+    width: 24%;
+    height: 40px;
   }
 }
 
