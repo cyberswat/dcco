@@ -4,10 +4,10 @@
 // ----------------------------------------------------------------------------
 
 .promos {
-  margin: 50px 0;
+  padding: 50px 0;
 
   @include breakpoint($tablet, $no-query: '.lt-ie9') {
-    margin: 150px 0;
+    padding: 150px 0;
   }
 }
 
