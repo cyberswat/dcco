@@ -121,7 +121,7 @@ function dcco_landing_promo_views_default_views() {
   $handler->display->display_options['fields']['field_image']['alter']['text'] = '  </div>
   <div class="columns__column">
     <figure class="promo__image">
-      <a data-promo-backgound="[uri]" href="[field_promo_link_1]">[field_image]</a>
+      <a href="[field_promo_link_1]">[field_image]</a>
     </figure>
   </div>
 </div>';
