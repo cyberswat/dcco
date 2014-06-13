@@ -1125,10 +1125,6 @@ body {
   background-color: transparent !important;
 }
 
-#comments #comment-form .form-actions #edit-submit {
-  margin-right: 1%;
-}
-
 .form-item,
 .form-actions {
   margin: 1.33333em 0;
