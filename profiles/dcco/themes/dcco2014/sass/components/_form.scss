@@ -95,3 +95,21 @@ select.error {
   // Removes the ackward box outline on :focus
   top: 0;
 }
+
+
+// Tweak to commerce's cancel button
+#edit-cancel {
+  @include button;
+  @include button--medium;
+  @include button--primary;
+}
+
+// Spacing on buttons
+input[type="submit"] {
+  margin-right: 1em;
+}
+
+.button, #edit-submit + .button, #edit-cancel {
+  margin-left: 1em;
+  margin-right: 0;
+}
