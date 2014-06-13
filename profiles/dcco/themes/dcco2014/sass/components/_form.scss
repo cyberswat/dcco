@@ -96,18 +96,20 @@ select.error {
   top: 0;
 }
 
-// Spacing on cart buttons
 .checkout-buttons {
   // spacing on cart's submit button
   .checkout-continue {
-    margin-right: 1%;
+    margin-right: 1em;
   }
   // Tweak to commerce's cancel button
   .checkout-cancel {
     @include button;
     @include button--medium;
     @include button--primary;
-    margin-left: 1%;
   }
 }
 
+// Spacing on buttons
+.button + .button {
+  margin-left: 1em;
+}

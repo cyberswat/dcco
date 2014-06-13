@@ -1196,7 +1196,7 @@ select.error {
 }
 
 .checkout-buttons .checkout-continue {
-  margin-right: 1%;
+  margin-right: 1em;
 }
 .checkout-buttons .checkout-cancel {
   display: -moz-inline-stack;
@@ -1220,7 +1220,6 @@ select.error {
   line-height: 1.14286em;
   padding: 0.57143em 1.71429em;
   background: #01986c;
-  margin-left: 1%;
 }
 .checkout-buttons .checkout-cancel:hover {
   color: #dae8e2;
@@ -1231,6 +1230,10 @@ select.error {
 }
 .checkout-buttons .checkout-cancel:active {
   background: #017864;
+}
+
+.button + .button {
+  margin-left: 1em;
 }
 
 h1, h2, h3, h4, h5, h6 {
