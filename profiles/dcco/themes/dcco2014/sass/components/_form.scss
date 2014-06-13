@@ -96,14 +96,12 @@ select.error {
   top: 0;
 }
 
-// button spacing 
-.checkout-buttons {
-  // Tweak to commerce's cancel button
-  .checkout-cancel {
-    @include button;
-    @include button--medium;
-    @include button--primary;
-  }
+
+// Tweak to commerce's cancel button
+#edit-cancel {
+  @include button;
+  @include button--medium;
+  @include button--primary;
 }
 
 // Spacing on buttons

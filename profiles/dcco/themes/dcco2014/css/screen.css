@@ -1195,7 +1195,7 @@ select.error {
   top: 0;
 }
 
-.checkout-buttons .checkout-cancel {
+#edit-cancel {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -1218,14 +1218,14 @@ select.error {
   padding: 0.57143em 1.71429em;
   background: #01986c;
 }
-.checkout-buttons .checkout-cancel:hover {
+#edit-cancel:hover {
   color: #dae8e2;
   text-decoration: none;
 }
-.checkout-buttons .checkout-cancel:hover {
+#edit-cancel:hover {
   background: #00c584;
 }
-.checkout-buttons .checkout-cancel:active {
+#edit-cancel:active {
   background: #017864;
 }
 
