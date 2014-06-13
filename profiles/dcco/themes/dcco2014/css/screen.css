@@ -1195,9 +1195,6 @@ select.error {
   top: 0;
 }
 
-.checkout-buttons .checkout-continue {
-  margin-right: 1em;
-}
 .checkout-buttons .checkout-cancel {
   display: -moz-inline-stack;
   display: inline-block;
@@ -1232,8 +1229,13 @@ select.error {
   background: #017864;
 }
 
-.button + .button {
+input[type="submit"] {
+  margin-right: 1em;
+}
+
+.button, #edit-submit + .button, #edit-cancel {
   margin-left: 1em;
+  margin-right: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
