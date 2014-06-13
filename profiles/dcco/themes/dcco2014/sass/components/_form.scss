@@ -95,3 +95,19 @@ select.error {
   // Removes the ackward box outline on :focus
   top: 0;
 }
+
+// Spacing on cart buttons
+.checkout-buttons {
+  // spacing on cart's submit button
+  .checkout-continue {
+    margin-right: 1%;
+  }
+  // Tweak to commerce's cancel button
+  .checkout-cancel {
+    @include button;
+    @include button--medium;
+    @include button--primary;
+    margin-left: 1%;
+  }
+}
+
