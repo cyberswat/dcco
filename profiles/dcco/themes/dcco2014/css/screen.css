@@ -673,7 +673,7 @@ tr.even {
 }
 
 body {
-  background: url('../img/splash/background-splash.jpg?1402591671') 50% 50% fixed;
+  background: url('../img/splash/background-splash.jpg?1402530267') 50% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1112,6 +1112,7 @@ body {
 @media (min-width: 768px) {
   #navigation {
     background: none;
+    padding-bottom: 30px;
   }
   #navigation ul.nav {
     padding: 30px 0 0;
