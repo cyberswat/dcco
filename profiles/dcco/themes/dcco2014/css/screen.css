@@ -1195,40 +1195,6 @@ select.error {
   top: 0;
 }
 
-#edit-cancel {
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
-  border: none;
-  color: white;
-  font-family: "refrigerator-deluxe", Impact, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  letter-spacing: .1em;
-  text-transform: uppercase;
-  font-size: 1.16667em;
-  line-height: 1.14286em;
-  padding: 0.57143em 1.71429em;
-  background: #01986c;
-}
-#edit-cancel:hover {
-  color: #dae8e2;
-  text-decoration: none;
-}
-#edit-cancel:hover {
-  background: #00c584;
-}
-#edit-cancel:active {
-  background: #017864;
-}
-
 input[type="submit"] {
   margin-right: 1em;
 }

@@ -97,13 +97,6 @@ select.error {
 }
 
 
-// Tweak to commerce's cancel button
-#edit-cancel {
-  @include button;
-  @include button--medium;
-  @include button--primary;
-}
-
 // Spacing on buttons
 input[type="submit"] {
   margin-right: 1em;
